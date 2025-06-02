@@ -1,0 +1,99 @@
+/* Reset dasar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #fceabb, #f8b500);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container */
+.container {
+  background: #ffffffcc;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 550px;
+  backdrop-filter: blur(8px);
+}
+
+/* Header */
+.header h3 {
+  text-align: center;
+  color: #ff6f00;
+  margin-bottom: 25px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+/* Label umum */
+form label {
+  display: block;
+  margin-bottom: 6px;
+  color: #333;
+  font-weight: 600;
+}
+
+/* Input, select, textarea */
+form input[type="text"],
+form input[type="date"],
+form select,
+form textarea {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 15px;
+  border: 2px solid #ffd54f;
+  border-radius: 10px;
+  background-color: #fffbe7;
+  transition: 0.3s;
+}
+
+form input[type="text"]:focus,
+form input[type="date"]:focus,
+form select:focus,
+form textarea:focus {
+  border-color: #ff8f00;
+  background-color: #fff;
+  outline: none;
+}
+
+/* Radio buttons */
+form input[type="radio"] {
+  margin-right: 6px;
+}
+
+form label[for="programming"],
+form label[for="desain"],
+form label[for="jaringan"],
+form label[for="data"] {
+  margin-right: 15px;
+  color: #555;
+  font-weight: normal;
+}
+
+/* Tombol */
+form button {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(to right, #ff9800, #f57c00);
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+form button:hover {
+  background: linear-gradient(to right, #f57c00, #ef6c00);
+  transform: scale(1.03);
+}
